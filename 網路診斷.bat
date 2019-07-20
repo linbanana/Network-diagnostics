@@ -42,7 +42,7 @@ echo ---------------------------------------------------------------------------
 echo.
 set /p logpath=是否要設定儲存的路徑位置?1.yes 2.no(使用預設位置：桌面)　　
 echo.
-if "%logpath%"=="1" (set /p setpath=請輸入您要儲存的路徑位置：) else (if "%logpath%"=="2" (set setpath="D:\Users\%UserName%\Desktop") else (echo 輸入錯誤!請輸入"1"or"2"... &Goto logpath))
+if "%logpath%"=="1" (set /p setpath=請輸入您要儲存的路徑位置：) else (if "%logpath%"=="2" (set setpath="C:\Users\%UserName%\Desktop") else (echo 輸入錯誤!請輸入"1"or"2"... &Goto logpath))
 if "%address%"=="1" (Goto how2) else (Goto how)
 pause
 
